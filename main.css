@@ -1,0 +1,39 @@
+:root {
+  --dark-color: #272a31;
+  --accent-color: #ec5242;
+  --light-color: #d3d3d3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.top-menu-bar,
+.logo,
+.menu-list-items {
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+
+#main-container {
+  padding: 1rem;
+}
