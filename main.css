@@ -8,17 +8,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
   list-style: none;
   text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: lato, sans-serif;
 }
 
 body {
   background-color: #d3d3d3;
+  /* width: 100vw; */
+  /* border: 1px solid black; */
 }
 
 header {
   padding: 1rem;
+  /* width: 100vw; */
 }
 
 .top-menu-bar,
@@ -28,8 +32,15 @@ header {
   display: none;
 }
 
+.mobile-menu-btn {
+  padding-left: 1rem;
+  /* border: 1px solid black; */
+}
+.open-btn {
+}
+
 #main-container {
-  /* padding: 1rem; */
+  /* width: 100vw; */
 }
 
 .main-introduction {
@@ -38,31 +49,45 @@ header {
 
 .intro-greeting {
   color: var(--accent-color);
+  padding: 1rem;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 .intro-heading {
   color: var(--accent-color);
+  /* border: 1px solid black; */
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 900;
 }
 
 .intro-text {
   color: var(--dark-color);
   border: 2px solid #fff;
   padding: 1rem;
+  text-align: start;
+  vertical-align: center;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .intro-time {
+  padding: 1rem;
   color: var(--dark-color);
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.7rem;
+  font-weight: 900;
 }
 
 .intro-venue {
+  padding: 1rem;
   color: var(--dark-color);
 }
 
 .main-program {
   background-color: var(--dark-color);
-  color: var(--light-color);
+  color: #fff;
+  padding: 1rem;
 }
 
 .main-program h2 {
@@ -70,11 +95,13 @@ header {
   /* border: 1px solid #fff; */
   margin: 0 auto;
   padding: 1rem;
+  font-weight: 350;
 }
 
 .main-program hr {
   border: 1px solid rgba(236, 82, 66, 0.3);
   margin: auto;
+  margin-bottom: 1.5rem;
   width: 10%;
 }
 
@@ -87,4 +114,141 @@ header {
 .main-program ul li {
   /* display: flex; */
   background-color: rgba(211, 211, 211, 0.1);
+}
+
+.program-lineup {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.program-lineup span {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.program-lineup h3 {
+  color: var(--accent-color);
+  width: 25%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.program-lineup p {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-program-btn-container {
+  /* width: 60%; */
+  margin: auto auto;
+  /* border: 2px solid black; */
+  /* height: 100px; */
+}
+.main-program-btn-container button {
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+.featured-speakers {
+  /* padding: 1rem; */
+}
+
+.featured-speakers h2 {
+  color: var(--dark-color);
+  /* width: fit-content; */
+
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.featured-speakers hr {
+  border: 1px solid rgba(236, 82, 66, 0.3);
+  margin: auto;
+  /* width: 10%; */
+}
+
+.speakers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: yellow; */
+}
+
+.speakers-list li {
+  display: flex;
+  /* flex-direction: ; */
+  /* border: 1px solid black; */
+}
+
+.speaker-image-container {
+  /* width: fit-content; */
+  height: 100%;
+}
+
+.speaker-details-container {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  /* width: 70%; */
+  gap: 1rem;
+  /* border: 1px solid black; */
+  padding: 1rem;
+  /* background-color: yellow; */
+}
+
+.speaker-details-container h3 {
+  color: var(--dark-color);
+}
+.speaker-profession {
+  color: var(--accent-color);
+}
+.speakers-list hr {
+  border: 1px solid rgba(39, 42, 49, 0.2);
+  margin: 0;
+  width: 5%;
+}
+
+.featured-speakers-btn-container {
+  height: 100px;
+  /* width: 60%; */
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+.featured-speakers-btn-container button {
+  /* width: 100%; */
+  height: 100%;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+.partners {
+  background-color: var(--dark-color);
+}
+
+.partner-companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner-companies li {
+  width: 33%;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

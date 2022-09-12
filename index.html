@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/wxx3fxh.css" />
     <script
       src="https://kit.fontawesome.com/7c259eb882.js"
       crossorigin="anonymous"
@@ -30,8 +31,8 @@
         <div class="logo"><a href="#">Logo</a></div>
         <div class="mobile-menu">
           <div class="mobile-menu-btn">
-            <i class="close-btn">close btn</i>
-            <i class="fa-sharp fa-solid fa-bars open-btn">open btn</i>
+            <i class="fa-sharp fa-solid fa-xmark close-btn"></i>
+            <i class="fa-sharp fa-solid fa-bars fa-2x open-btn"></i>
           </div>
           <ul class="menu-list-items">
             <li><a href="#"> About</a></li>
@@ -60,7 +61,7 @@
           creating a positive change with people from over 80 countries is
           taking place in October, in Korea.
         </p>
-        <p class="intro-time">2015.10.15(THU) ~ 16(FRI) <br /></p>
+        <p class="intro-time">2015.10.15(THU) ~ 16(FRI)</p>
         <p class="intro-venue">
           @ National Museum of Korea, Art Center Nabi and more
         </p>
@@ -71,8 +72,10 @@
         <hr />
         <ul>
           <li>
-            <div>
-              <span>icon</span>
+            <div class="program-lineup item1">
+              <span
+                ><img src="./images/lecture.png" alt="" width="64" height="64"
+              /></span>
               <h3>Lecture</h3>
               <p>
                 Listen to the speakers from various countries about the messages
@@ -81,8 +84,14 @@
             </div>
           </li>
           <li>
-            <div>
-              <span>icon</span>
+            <div class="program-lineup item2">
+              <span
+                ><img
+                  src="./images/exhibition.png"
+                  alt=""
+                  width="64"
+                  height="64"
+              /></span>
               <h3>CC Exhibition</h3>
               <p>
                 Appreciate various creations applying CC license of artists,
@@ -91,8 +100,10 @@
             </div>
           </li>
           <li>
-            <div>
-              <span>icon</span>
+            <div class="program-lineup item3">
+              <span
+                ><img src="./images/chat.png" alt="" width="64" height="64"
+              /></span>
               <h3>Forum</h3>
               <p>
                 Have the time to share your thoughts and opinions with experts
@@ -101,8 +112,14 @@
             </div>
           </li>
           <li>
-            <div>
-              <span>icon</span>
+            <div class="program-lineup item4">
+              <span
+                ><img
+                  src="./images/presentation.png"
+                  alt=""
+                  width="64"
+                  height="64"
+              /></span>
               <h3>Workshop</h3>
               <p>
                 Try creating your own work using open source license rather than
@@ -111,8 +128,14 @@
             </div>
           </li>
           <li>
-            <div>
-              <span>icon</span>
+            <div class="program-lineup item5">
+              <span
+                ><img
+                  src="./images/networking.png"
+                  alt=""
+                  width="64"
+                  height="64"
+              /></span>
               <h3>CC Ignite</h3>
               <p>
                 Get opportunities to network with CC affiliates around the
@@ -120,26 +143,28 @@
               </p>
             </div>
           </li>
+          <li class="main-program-btn-container">
+            <button type="button">Join CC Global Summit 2015</button>
+          </li>
         </ul>
-        <button type="button">Join CC Global Summit 2015</button>
       </section>
 
       <section class="featured-speakers">
         <h2>Featured Speakers</h2>
-        <hr />
+        <hr class="featured-speakers-underline" />
         <ul class="speakers-list">
           <li>
             <div class="speaker-image-container">
-              <img src="#" alt="speaker's name" />
+              <img src="https://picsum.photos/200" alt="speaker's name" />
             </div>
-            <div>
+            <div class="speaker-details-container">
               <h3 class="speaker-name">Yochai Benkler</h3>
-              <p>
+              <p class="speaker-profession">
                 Berkman Professor of Entrepreneurial Legal Studies at Havard Law
                 School
               </p>
               <hr />
-              <p>
+              <p class="speaker-details">
                 Benkler studies commons-based peer production and published his
                 seminal book: The Wealth of Networks in 2006.
               </p>
@@ -147,23 +172,47 @@
           </li>
           <li>
             <div class="speaker-image-container">
-              <img src="#" alt="speaker's name" />
+              <img src="https://picsum.photos/200" alt="speaker's name" />
             </div>
-            <div>
+            <div class="speaker-details-container">
               <h3 class="speaker-name">SohYeong Noh</h3>
-              <p>Director of Art Center Nabi and a board member of CC Korea</p>
+              <p class="speaker-profession">
+                Director of Art Center Nabi and a board member of CC Korea
+              </p>
               <hr />
-              <p>
+              <p class="speaker-details">
                 As the main venue for new media art production in Korea, Nabi
                 promotes cross-disciplinary collaboration and understanding
                 among science technology, humanities, and the arts.
               </p>
             </div>
           </li>
+          <li class="featured-speakers-btn-container">
+            <button type="button">MORE *arrow down*</button>
+          </li>
         </ul>
-        <button type="button">MORE *arrow down*</button>
       </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="partners">
+        <h2>Partner</h2>
+        <hr />
+        <ul class="partner-companies">
+          <li>mozilla</li>
+          <li>Google</li>
+          <li>NAVER</li>
+          <li>daumkakao</li>
+          <li><i class="fa-brands fa-airbnb"></i> airbnb</li>
+        </ul>
+      </div>
+      <div class="foot">
+        <div class="footer-logo">Logo</div>
+        <p class="copyright">
+          2015 Creative Commons Korea <br />
+          Some Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
