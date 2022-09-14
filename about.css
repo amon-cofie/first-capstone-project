@@ -147,3 +147,93 @@
   bottom: 0;
   background-color: rgba(236, 82, 66, 0.7);
 }
+
+@media screen and (min-width: 768px) {
+  .about-main-introduction {
+    height: 100vh;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .about-intro-greeting {
+    display: none;
+  }
+
+  .about-intro-heading {
+    font-size: 2.8rem;
+    padding-bottom: 3rem;
+    border: 1px solid black;
+  }
+
+  .about-intro-text {
+    padding: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 70%;
+  }
+
+  .about-intro-contact-us {
+    padding-top: 4rem;
+  }
+
+  .remove-on-desktop {
+    display: none;
+  }
+
+  .about-logo-container {
+    height: 50vh;
+    /* background-color: #fff; */
+    /* padding-top: 2rem; */
+    /* padding-bottom: 2rem; */
+  }
+
+  .about-logo-container hr {
+    /* border: 1px solid rgba(236, 82, 66, 1); */
+    /* margin: auto; */
+    /* margin-bottom: 1.5rem; */
+    width: 3%;
+  }
+
+  .about-logo-container p {
+    width: 45%;
+    /* text-align: center; */
+    /* color: var(--dark-color); */
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo-showcase {
+    margin-top: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+    height: 35%;
+  }
+
+  .history-container hr {
+    /* border: 1px solid rgba(236, 82, 66, 1); */
+    /* margin: auto; */
+    /* margin-bottom: 1.5rem; */
+    width: 3%;
+  }
+
+  .history-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1rem;
+    /* background-color: yellow; */
+  }
+
+  .history-card {
+    background-image: url(https://picsum.photos/200/150);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 10rem;
+    position: relative;
+    width: 21rem;
+  }
+}

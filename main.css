@@ -50,7 +50,7 @@ header {
   color: var(--accent-color);
   padding: 1rem;
   padding-bottom: 0.1rem;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 100%;
 }
@@ -196,6 +196,10 @@ header {
   gap: 2rem;
 }
 
+.featured-speakers-btn-container {
+  display: flex;
+}
+
 .speakers-list li {
   display: flex;
   /* flex-direction: ; */
@@ -252,13 +256,6 @@ header {
   width: 10%;
 }
 
-.featured-speakers-btn-container {
-  height: 2.8rem;
-  width: 100%;
-  /* margin: auto; */
-  border: 2px solid var(--dark-color);
-}
-
 .featured-speakers-btn-container button {
   display: flex;
   justify-content: center;
@@ -275,6 +272,13 @@ header {
   align-self: center;
   justify-self: center;
   /* border: 1px solid black; */
+}
+
+.featured-speakers-btn-container {
+  height: 2.8rem;
+  width: 100%;
+  /* margin: auto; */
+  border: 2px solid var(--dark-color);
 }
 
 .partners {
@@ -383,6 +387,10 @@ header {
   display: block;
 }
 
+.new-main-program-btn-container {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu-btn {
     display: none;
@@ -452,5 +460,208 @@ header {
 
   .cc-campaign {
     padding: 0.5rem;
+  }
+
+  .main-introduction {
+    padding-top: 5%;
+    /* padding-bottom: 10%; */
+    height: 100vh;
+  }
+
+  .intro-greeting {
+    color: var(--accent-color);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 100%;
+    /* border: 1px solid black; */
+  }
+
+  .intro-heading {
+    color: var(--accent-color);
+    /* border: 1px solid black; */
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 95%;
+  }
+
+  .intro-text {
+    color: var(--dark-color);
+    border: 2px solid #fff;
+    padding: 1rem;
+    text-align: start;
+    vertical-align: center;
+    width: 50%;
+    /* margin: 0 auto; */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .intro-time {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: var(--dark-color);
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 100%;
+  }
+
+  .intro-venue {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: var(--dark-color);
+    line-height: 100%;
+    font-size: 1.3rem;
+  }
+
+  .main-program {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* border: 1px solid white; */
+  }
+
+  .main-program hr {
+    border: 1px solid rgba(236, 82, 66, 0.3);
+    margin: auto;
+    margin-bottom: 1.5rem;
+    width: 3%;
+  }
+
+  .main-program ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.188rem;
+    /* border: 2px solid white; */
+  }
+
+  .program-lineup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    padding: 1rem;
+  }
+
+  .program-lineup h3 {
+    color: var(--accent-color);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 2px solid white; */
+  }
+
+  .main-program-btn-container {
+    display: none;
+  }
+
+  .program-lineup p {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-program ul li {
+    /* display: flex; */
+    background-color: rgba(211, 211, 211, 0.1);
+    width: 20%;
+  }
+
+  .main-program-see-more-btn {
+    border-bottom: 2px solid var(--light-color);
+    width: fit-content;
+    margin: 2rem auto;
+  }
+
+  .main-program-see-more-link {
+    color: var(--light-color);
+  }
+
+  .featured-speakers-btn-container {
+    display: none;
+  }
+
+  .partners {
+    height: 160px;
+  }
+
+  .foot {
+    height: 160px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .partners hr {
+    width: 3%;
+  }
+
+  .partner-companies {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 4rem;
+    padding-bottom: 3.2rem;
+    /* border: 3px solid white; */
+  }
+
+  .partner-companies li {
+    width: auto;
+    text-align: center;
+    color: var(--light-color);
+    font-size: 2rem;
+    margin-top: -37px;
+    margin-bottom: auto;
+    /* border: 1px solid white; */
+  }
+
+  .new-main-program-btn-container {
+    display: block;
+  }
+
+  .speakers-list {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    /* border: 2px solid black; */
+  }
+
+  .speakers-list li {
+    display: flex;
+    width: 40%;
+    /* border: 2px solid black; */
+  }
+
+  .speaker-image-container {
+    width: 35%;
+    /* border: 1px solid black; */
+    justify-self: center;
+    align-self: center;
+    height: 100%;
+  }
+
+  .speaker-image-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .featured-speakers-underline {
+    border: 1px solid rgba(236, 82, 66, 0.3);
+    margin: auto;
+    width: 3%;
+    margin-bottom: 2rem;
   }
 }
