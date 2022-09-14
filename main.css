@@ -84,6 +84,7 @@ header {
 
 .intro-venue {
   padding-left: 1rem;
+  padding-right: 1rem;
   color: var(--dark-color);
   line-height: 100%;
 }
@@ -380,4 +381,76 @@ header {
 
 .make-appear {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  #header-container {
+    padding: 0;
+  }
+
+  .top-menu-bar {
+    display: block;
+  }
+
+  .top-menu-list {
+    background-color: #272a31;
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .top-menu-list a {
+    color: #fff;
+    font-size: 0.825rem;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .menu-list-items {
+    position: static;
+
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+
+    /* width: 100%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* left: 1rem; */
+    /* right: 1rem; */
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #fff;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .menu-list-items a {
+    font-size: 1rem;
+  }
+
+  .cc-campaign {
+    padding: 0.5rem;
+  }
 }
