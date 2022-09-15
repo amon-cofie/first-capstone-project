@@ -29,20 +29,49 @@ moreBtn.classList.add("new-main-program-btn-container");
 
 const speakerArray = [
   {
-    speakerImage: "https://picsum.photos/200",
-    speakerName: "Yochai Benkler",
+    speakerImage: "./images/Featured-speakers/1.jpg",
+    speakerName: "Margaret Moreno",
     speakerProfession:
       "Berkman Professor of Entrepreneurial Legal Studies at Havard Law School",
     speakerDetails:
-      "Benkler studies commons-based peer production and published his seminal book: The Wealth of Networks in 2006.",
+      "Moreno studies commons-based peer production and published her seminal book: The Wealth of Networks in 2006.",
   },
   {
-    speakerImage: "https://picsum.photos/200",
-    speakerName: "SohYeong Noh",
+    speakerImage: "./images/Featured-speakers/2.jpg",
+    speakerName: "Tobias Block",
     speakerProfession:
-      "Director of Art Center Nabi and a board member of CC Korea",
+      "Director of the BMEN Center and a board member of BMEN Global",
     speakerDetails:
-      "As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.",
+      "As the main venue for new BMEN exhibition center in Korea, Block promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.",
+  },
+  {
+    speakerImage: "./images/Featured-speakers/3.jpg",
+    speakerName: "Dillon Sturgill",
+    speakerProfession: "Executive Director for Wikimedia foundation",
+    speakerDetails:
+      "Dillon Sturgill is the Executive Director of the Wikimedia foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languages and used by nearly half a billion people around the world every month.",
+  },
+  {
+    speakerImage: "./images/Featured-speakers/4.jpg",
+    speakerName: "Damien Mcneil",
+    speakerProfession:
+      "Professor in Biomedical Engineering, Cambridge University.",
+    speakerDetails:
+      "Damien Mcneil helped bring the internet to Asia and is an outspoken advocate for the open web and digital commons, In 2012, he was inducted into the inaugural class of the internet society's (ISOC) Internet Hall of Fame.",
+  },
+  {
+    speakerImage: "./images/Featured-speakers/5.jpg",
+    speakerName: "Lucio Ridenour",
+    speakerProfession: "CEO of BMEN Global, ex CPP of the Mozilla Foundation.",
+    speakerDetails:
+      "Lucio had been leading open-source projects at the Mozilla Foundation such as the open source movement.",
+  },
+  {
+    speakerImage: "./images/Featured-speakers/6.jpg",
+    speakerName: "Deborah Barnes",
+    speakerProfession: "President of Young Pirates Europe",
+    speakerDetails:
+      "With European integration, political democracy and participation of youth through online as her major concern, her report outlining potential changes to EU copyright law was approved by te Parliament in July.",
   },
 ];
 

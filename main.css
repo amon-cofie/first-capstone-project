@@ -43,6 +43,14 @@ header {
 }
 
 .main-introduction {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(211, 211, 211, 0.5),
+      rgba(211, 211, 211, 0.5)
+    ),
+    url(./images/background-images/wallpaperflare-cropped.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 4rem;
 }
 
@@ -62,6 +70,7 @@ header {
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 95%;
+  text-shadow: 2px 2px 2px var(--dark-color);
 }
 
 .intro-text {
@@ -72,6 +81,7 @@ header {
   vertical-align: center;
   width: 95%;
   margin: 0 auto;
+  background-color: rgba(211, 211, 211, 0.7);
 }
 
 .intro-time {
@@ -93,6 +103,23 @@ header {
   background-color: var(--dark-color);
   color: #fff;
   padding: 1rem;
+  background-image: radial-gradient(#272a31 15%, transparent 15%),
+    linear-gradient(
+      45deg,
+      transparent 48%,
+      rgb(14, 13, 13) 48%,
+      rgb(14, 13, 13) 52%,
+      transparent 52%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 48%,
+      rgb(14, 13, 13) 48%,
+      rgb(14, 13, 13) 52%,
+      transparent 52%
+    );
+
+  background-size: 15px 15px;
 }
 
 .main-program h2 {
@@ -443,6 +470,8 @@ header {
   }
 
   nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     /* border: 1px solid black; */
@@ -452,6 +481,8 @@ header {
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    z-index: 99;
+    filter: drop-shadow(1px 1px 20px);
   }
 
   .menu-list-items a {
@@ -463,9 +494,15 @@ header {
   }
 
   .main-introduction {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(211, 211, 211, 0.7),
+        rgba(211, 211, 211, 0.7)
+      ),
+      url(./images/background-images/wallpaperflare.com_wallpaper.jpg);
     padding-top: 5%;
     /* padding-bottom: 10%; */
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .intro-greeting {
@@ -481,6 +518,7 @@ header {
   }
 
   .intro-heading {
+    /* color: var(--accent-color); */
     color: var(--accent-color);
     /* border: 1px solid black; */
     padding-left: 10%;
@@ -488,6 +526,10 @@ header {
     font-size: 5rem;
     font-weight: 900;
     line-height: 95%;
+    /* background-image: initial; */
+    /* background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    text-shadow: 2px 2px 2px var(--dark-color);
   }
 
   .intro-text {
@@ -500,6 +542,7 @@ header {
     /* margin: 0 auto; */
     margin-left: 10%;
     margin-right: 10%;
+    background-color: rgba(211, 211, 211, 0.7);
   }
 
   .intro-time {
@@ -592,11 +635,11 @@ header {
   }
 
   .partners {
-    height: 160px;
+    min-height: 10rem;
   }
 
   .foot {
-    height: 160px;
+    min-height: 10rem;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -646,11 +689,11 @@ header {
   }
 
   .speaker-image-container {
-    width: 35%;
+    width: 12.5rem;
     /* border: 1px solid black; */
     justify-self: center;
     align-self: center;
-    height: 100%;
+    height: 12.5rem;
   }
 
   .speaker-image-container img {

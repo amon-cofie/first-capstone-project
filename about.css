@@ -1,6 +1,9 @@
 .about-main-introduction {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-image: url(./images/background-images/1589198297flowing-lines-grey-freesvg.org.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-intro-greeting {
@@ -22,6 +25,7 @@
   font-weight: 900;
   line-height: 95%;
   text-align: center;
+  text-shadow: 2px 2px 2px var(--dark-color);
 }
 
 .about-intro-text {
@@ -88,8 +92,19 @@
 
 .logo-showcase {
   border: 2px solid var(--dark-color);
-  width: fit-content;
-  margin: auto;
+  /* width: fit-content; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 10rem;
+}
+
+.logo-showcase img {
+  /* border: 2px solid var(--dark-color); */
+  /* width: fit-content; */
+  /* margin: auto; */
+  height: 100%;
+  width: 100%;
 }
 
 .history-container {
@@ -121,6 +136,7 @@
 }
 
 .history-cards {
+  color: #fff;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -129,7 +145,6 @@
 }
 
 .history-card {
-  background-image: url(https://picsum.photos/200/150);
   display: flex;
   text-align: center;
   justify-content: center;
@@ -139,20 +154,46 @@
   position: relative;
 }
 
+.history-card-1 {
+  text-shadow: 2px 2px 2px var(--dark-color);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(236, 82, 66, 0.8),
+      rgba(236, 82, 66, 0.8)
+    ),
+    url(./images/history-images/pexels-christina-morillo-1181400.jpg);
+}
+
+.history-card-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(236, 82, 66, 0.8),
+      rgba(236, 82, 66, 0.8)
+    ),
+    url(./images/history-images/pexels-icsa-1709003.jpg);
+  text-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.history-card h4 {
+  z-index: 3;
+  font-weight: 900;
+}
+
 .bg-overlay {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(236, 82, 66, 0.7);
+  background-color: rgba(236, 82, 66, 0.4);
 }
 
 @media screen and (min-width: 768px) {
   .about-main-introduction {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 10%;
     padding-bottom: 10%;
+    background-size: 100%;
   }
 
   .about-intro-greeting {
@@ -160,9 +201,8 @@
   }
 
   .about-intro-heading {
-    font-size: 2.8rem;
+    font-size: 4rem;
     padding-bottom: 3rem;
-    border: 1px solid black;
   }
 
   .about-intro-text {
@@ -181,7 +221,7 @@
   }
 
   .about-logo-container {
-    height: 50vh;
+    min-height: 50vh;
     /* background-color: #fff; */
     /* padding-top: 2rem; */
     /* padding-bottom: 2rem; */
@@ -198,15 +238,26 @@
     width: 45%;
     /* text-align: center; */
     /* color: var(--dark-color); */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-left: auto;
     margin-right: auto;
   }
 
   .logo-showcase {
+    width: 28.125rem;
+    margin: auto;
     margin-top: 1.5rem;
     /* margin-bottom: 1.5rem; */
-    height: 35%;
+    height: 10.625rem;
+
+    /* overflow: hidden; */
+  }
+
+  .logo-showcase img {
+    /* margin-top: 1.5rem; */
+    /* margin-bottom: 1.5rem; */
+    height: 100%;
+    width: 100%;
   }
 
   .history-container hr {
@@ -226,7 +277,12 @@
   }
 
   .history-card {
-    background-image: url(https://picsum.photos/200/150);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(236, 82, 66, 0.4),
+        rgba(236, 82, 66, 0.4)
+      ),
+      url(https://picsum.photos/200/150);
     display: flex;
     text-align: center;
     justify-content: center;
@@ -235,5 +291,31 @@
     height: 10rem;
     position: relative;
     width: 21rem;
+  }
+
+  .home-btn {
+    display: none;
+  }
+
+  .history-card-1 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(236, 82, 66, 0.8),
+        rgba(236, 82, 66, 0.8)
+      ),
+      url(./images/history-images/pexels-christina-morillo-1181400.jpg);
+    background-size: cover;
+    text-shadow: 2px 2px 2px var(--dark-color);
+  }
+
+  .history-card-2 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(236, 82, 66, 0.8),
+        rgba(236, 82, 66, 0.8)
+      ),
+      url(./images/history-images/pexels-icsa-1709003.jpg);
+    background-size: cover;
+    text-shadow: 2px 2px 2px var(--dark-color);
   }
 }
