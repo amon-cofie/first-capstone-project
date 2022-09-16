@@ -1,3 +1,7 @@
+#about-main-container {
+  margin-top: 80px;
+}
+
 .about-main-introduction {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -162,6 +166,7 @@
       rgba(236, 82, 66, 0.8)
     ),
     url(./images/history-images/pexels-christina-morillo-1181400.jpg);
+  background-size: cover;
 }
 
 .history-card-2 {
@@ -172,6 +177,7 @@
     ),
     url(./images/history-images/pexels-icsa-1709003.jpg);
   text-shadow: 2px 2px 2px var(--dark-color);
+  background-size: cover;
 }
 
 .history-card h4 {
@@ -317,5 +323,9 @@
       url(./images/history-images/pexels-icsa-1709003.jpg);
     background-size: cover;
     text-shadow: 2px 2px 2px var(--dark-color);
+  }
+
+  #about-main-container {
+    margin-top: auto;
   }
 }
