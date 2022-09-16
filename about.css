@@ -99,7 +99,8 @@
   /* width: fit-content; */
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  margin-top: 1rem;
+  width: 80%;
   height: 10rem;
 }
 
@@ -254,7 +255,7 @@
     margin: auto;
     margin-top: 1.5rem;
     /* margin-bottom: 1.5rem; */
-    height: 10.625rem;
+    height: 16.875rem;
 
     /* overflow: hidden; */
   }
