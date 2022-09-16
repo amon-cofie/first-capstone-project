@@ -18,16 +18,10 @@ body {
   background-color: #d3d3d3;
 }
 
-header {
-}
-
 .top-menu-bar,
 .logo,
 .close-btn {
   display: none;
-}
-
-#header-container {
 }
 
 .mobile-menu-btn {
@@ -37,7 +31,6 @@ header {
   z-index: 11;
   position: fixed;
   background-color: var(--light-color);
-
   right: 0;
   left: 0;
   top: 0;
@@ -45,7 +38,8 @@ header {
 }
 
 .main-introduction {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to bottom,
       rgba(211, 211, 211, 0.5),
       rgba(211, 211, 211, 0.5)
@@ -71,7 +65,6 @@ header {
 
 .intro-heading {
   color: var(--accent-color);
-
   padding: 1rem;
   font-size: 2.5rem;
   font-weight: 900;
@@ -84,7 +77,6 @@ header {
   border: 2px solid #fff;
   padding: 1rem;
   text-align: start;
-  vertical-align: center;
   width: 95%;
   margin: 0 auto;
   background-color: rgba(211, 211, 211, 0.7);
@@ -109,7 +101,8 @@ header {
   background-color: var(--dark-color);
   color: #fff;
   padding: 1rem;
-  background-image: radial-gradient(#272a31 15%, transparent 15%),
+  background-image:
+    radial-gradient(#272a31 15%, transparent 15%),
     linear-gradient(
       45deg,
       transparent 48%,
@@ -124,13 +117,11 @@ header {
       rgb(14, 13, 13) 52%,
       transparent 52%
     );
-
   background-size: 15px 15px;
 }
 
 .main-program h2 {
   width: fit-content;
-
   margin: 0 auto;
   padding: 1rem;
   font-weight: 350;
@@ -147,6 +138,17 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.partner-companies li {
+  width: 30%;
+  text-align: center;
+  color: var(--light-color);
+  font-size: 2rem;
+}
+
+.speakers-list li {
+  display: flex;
 }
 
 .main-program ul li {
@@ -187,6 +189,7 @@ header {
   height: 80px;
   margin: 1.3rem auto;
 }
+
 .main-program-btn-container button {
   width: 100%;
   height: 100%;
@@ -205,7 +208,6 @@ header {
 .featured-speakers h2 {
   color: var(--dark-color);
   text-align: center;
-
   margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 0.7rem;
@@ -226,10 +228,6 @@ header {
   gap: 2rem;
 }
 
-.speakers-list li {
-  display: flex;
-}
-
 .speaker-image-container {
   width: 35%;
   align-self: center;
@@ -246,7 +244,6 @@ header {
   flex-direction: column;
   width: 65%;
   gap: 0.625rem;
-
   padding: 1rem;
 }
 
@@ -254,24 +251,24 @@ header {
   color: var(--dark-color);
   font-size: 1.5rem;
   font-weight: 900;
-
   line-height: 100%;
 }
+
 .speaker-profession {
   color: var(--accent-color);
   font-size: 1rem;
   font-style: italic;
   font-weight: 800;
-
   line-height: 100%;
 }
+
 .speaker-details {
   color: var(--dark-color);
   font-size: 0.9rem;
   font-weight: 800;
-
   line-height: 100%;
 }
+
 .speakers-list hr {
   border: 1px solid rgba(39, 42, 49, 0.5);
   margin: 0;
@@ -285,8 +282,12 @@ header {
   gap: 0.5rem;
   width: 100%;
   border: none;
-
   color: var(--dark-color);
+}
+
+.footer-logo img {
+  width: 10rem;
+  height: 6rem;
 }
 
 .featured-speakers-btn-container button img {
@@ -298,7 +299,6 @@ header {
   display: flex;
   height: 2.8rem;
   width: auto;
-
   border: 2px solid var(--dark-color);
   margin-left: 1rem;
   margin-right: 1rem;
@@ -311,7 +311,6 @@ header {
 .partners h2 {
   color: #fff;
   text-align: center;
-
   margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 0.7rem;
@@ -334,18 +333,10 @@ header {
   padding-bottom: 3.2rem;
 }
 
-.partner-companies li {
-  width: 30%;
-  text-align: center;
-  color: var(--light-color);
-  font-size: 2rem;
-}
-
 .foot {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   background-color: #fff;
   padding: 2rem;
 }
@@ -356,11 +347,6 @@ header {
   height: 100%;
   align-self: center;
   align-items: center;
-}
-
-.footer-logo img {
-  width: 10rem;
-  height: 6rem;
 }
 
 .copyright {
@@ -380,7 +366,6 @@ header {
   border-radius: 1rem;
   gap: 32px;
   position: absolute;
-
   left: 1rem;
   right: 1rem;
   padding: 2rem;
@@ -463,7 +448,6 @@ header {
 
   .menu-list-items {
     position: static;
-
     z-index: 10;
     display: flex;
     flex-direction: row;
@@ -499,14 +483,14 @@ header {
   }
 
   .main-introduction {
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         to bottom,
         rgba(211, 211, 211, 0.7),
         rgba(211, 211, 211, 0.7)
       ),
       url(./images/background-images/wallpaperflare.com_wallpaper.jpg);
     padding-top: 5%;
-
     min-height: 100vh;
   }
 
@@ -523,7 +507,6 @@ header {
 
   .intro-heading {
     color: var(--accent-color);
-
     padding-left: 10%;
     padding-right: 10%;
     font-size: 5rem;
@@ -537,9 +520,7 @@ header {
     border: 2px solid #fff;
     padding: 1rem;
     text-align: start;
-    vertical-align: center;
     width: 50%;
-
     margin-left: 10%;
     margin-right: 10%;
     background-color: rgba(211, 211, 211, 0.7);
@@ -576,6 +557,20 @@ header {
     width: 3%;
   }
 
+  .speakers-list li {
+    display: flex;
+    width: 40%;
+  }
+
+  .partner-companies li {
+    width: auto;
+    text-align: center;
+    color: var(--light-color);
+    font-size: 2rem;
+    margin-top: -37px;
+    margin-bottom: auto;
+  }
+
   .main-program ul {
     display: flex;
     flex-direction: row;
@@ -587,7 +582,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: none;
     padding: 1rem;
   }
 
@@ -652,15 +646,6 @@ header {
     padding-bottom: 3.2rem;
   }
 
-  .partner-companies li {
-    width: auto;
-    text-align: center;
-    color: var(--light-color);
-    font-size: 2rem;
-    margin-top: -37px;
-    margin-bottom: auto;
-  }
-
   .new-main-program-btn-container {
     display: block;
   }
@@ -675,14 +660,8 @@ header {
     gap: 1rem;
   }
 
-  .speakers-list li {
-    display: flex;
-    width: 40%;
-  }
-
   .speaker-image-container {
     width: 12.5rem;
-
     justify-self: center;
     align-self: center;
     height: 12.5rem;
@@ -707,6 +686,7 @@ header {
   .cc-campaign a:hover {
     color: #272a31;
   }
+
   .cc-campaign:hover {
     border-color: #d3d3d3;
   }
