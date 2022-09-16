@@ -165,8 +165,7 @@
 
 .history-card-1 {
   text-shadow: 2px 2px 2px var(--dark-color);
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       rgba(236, 82, 66, 0.8),
       rgba(236, 82, 66, 0.8)
@@ -176,8 +175,7 @@
 }
 
 .history-card-2 {
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       rgba(236, 82, 66, 0.8),
       rgba(236, 82, 66, 0.8)
@@ -301,8 +299,7 @@
   }
 
   .history-card {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         to bottom,
         rgba(236, 82, 66, 0.4),
         rgba(236, 82, 66, 0.4)
@@ -323,8 +320,7 @@
   }
 
   .history-card-1 {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         to bottom,
         rgba(236, 82, 66, 0.8),
         rgba(236, 82, 66, 0.8)
@@ -335,8 +331,7 @@
   }
 
   .history-card-2 {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         to bottom,
         rgba(236, 82, 66, 0.8),
         rgba(236, 82, 66, 0.8)
@@ -348,5 +343,21 @@
 
   #about-main-container {
     margin-top: auto;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .foot {
+    background-color: var(--dark-color);
+  }
+
+  .copyright {
+    color: var(--light-color);
+  }
+
+  .footer-logo {
+    width: 13rem;
   }
 }
