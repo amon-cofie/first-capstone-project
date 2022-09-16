@@ -62,7 +62,7 @@ const speakerArray = [
   {
     speakerImage: "./images/Featured-speakers/5.jpg",
     speakerName: "Lucio Ridenour",
-    speakerProfession: "CEO of BMEN Global, ex CPP of the Mozilla Foundation.",
+    speakerProfession: "CEO of BMEN Global, ex COO of the Mozilla Foundation.",
     speakerDetails:
       "Lucio had been leading open-source projects at the Mozilla Foundation such as the open source movement.",
   },
@@ -90,12 +90,62 @@ function newSpeaker(item) {
         ${item.speakerDetails}
       </p>
     </div>`;
-
   newSpeakerList.innerHTML = emptyString;
-
   return newSpeakerList;
 }
 
-speakerArray.forEach((e) => {
-  document.querySelector(".speakers-list").appendChild(newSpeaker(e));
-});
+let speakerArrayLength = speakerArray.length;
+let speakerListChecker = 2;
+
+function addTwoSpeakers(iterations) {
+  let result = 0;
+
+  if (speakerArrayLength - iterations > 0) {
+    document
+      .querySelector(".speakers-list")
+      .appendChild(newSpeaker(speakerArray[speakerListChecker]));
+    speakerListChecker += 1;
+  }
+  if (speakerArrayLength - iterations >= 2) {
+    document
+      .querySelector(".speakers-list")
+      .appendChild(newSpeaker(speakerArray[speakerListChecker]));
+    speakerListChecker += 1;
+
+    result = iterations + 2;
+  } else if (speakerArrayLength - iterations === 1) {
+    result(iterations + 1);
+  } else if (iterations <= 0) {
+    result = iterations;
+  }
+  return result;
+}
+
+const showMore = document.querySelector(".featured-speakers-btn-container");
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+function checkMediaQuery(query) {
+  if (query.matches) {
+    speakerArray.forEach((e) => {
+      document.querySelector(".speakers-list").appendChild(newSpeaker(e));
+    });
+  } else {
+    document
+      .querySelector(".speakers-list")
+      .appendChild(newSpeaker(speakerArray[0]));
+    document
+      .querySelector(".speakers-list")
+      .appendChild(newSpeaker(speakerArray[1]));
+    let stopper = 0;
+    showMore.addEventListener("click", () => {
+      stopper = addTwoSpeakers(speakerListChecker);
+      if (stopper === speakerArrayLength) {
+        showMore.classList.add("make-disappear");
+      }
+    });
+  }
+}
+
+checkMediaQuery(mediaQuery);
+
+mediaQuery.addListener(checkMediaQuery);
