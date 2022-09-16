@@ -16,6 +16,11 @@
 
 ## Live Demo
 
+<p float="left">
+  <img src="./images/readMe-images/desktop-view.png" />
+  <img src="./images/readMe-images/mobile-view.png" /> 
+  
+</p>
 ![alt-text-1](./images/readMe-images/desktop-view.png "title-1") ![alt-text-2](./images/readMe-images/mobile-view.png "title-2")
 ![alt-text-1](./images/readMe-images/desktop-gif.gif "title-1") ![alt-text-2](./images/readMe-images/mobile-gif.gif "title-2")
 
